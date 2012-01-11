@@ -2,6 +2,7 @@
 
 # Generates C files .h and .c
 
+die "You got to define <file>" unless ($ARGV[0]);
 my($fname, @mode) = $ARGV[0], undef;
 
 # Remove all white spaces, dots here ...
@@ -14,6 +15,7 @@ $fname_macro =~ tr/[a-z]/[A-Z]/;
 # Mode: ch, h, c
 {
 	my(@mode_tmp) = undef;
+	die "You got to define <mode>" unless ($ARGV[1]);
 	@mode_tmp = split('', $ARGV[1]);
 	foreach(@mode_tmp){
 		$mode{$_} = 1;
