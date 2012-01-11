@@ -4,8 +4,8 @@
 
 my($fname, @mode) = $ARGV[0], undef;
 
-# Remove all white spaces here ...
-$fname =~ s/\s/_/;
+# Remove all white spaces, dots here ...
+$fname =~ s/[\s\.]/_/;
 
 # Create var for using as the #define macro. Remove white spaces, upper case all.
 $fname_macro = $fname;
