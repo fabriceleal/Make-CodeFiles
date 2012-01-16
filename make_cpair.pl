@@ -70,13 +70,9 @@ $fname_macro =~ tr/[a-z]/[A-Z]/;
  */
 
 
-// VAMI stands for Validation Against Multiple Includes :)
-
 #ifndef ___VAMI_$fname_macro
 #define ___VAMI_$fname_macro
 
-// A header file only declares the functions headers and structs used. 
-// Implementations go into the .c file ;)
 
 
 #endif // ___VAMI_$fname_macro
