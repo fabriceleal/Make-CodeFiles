@@ -20,8 +20,8 @@ my($ext_code, $ext_header) = ('cc', 'h');
 # Mode: ch, h, c
 {
 	my(@mode_tmp) = undef;
-	die "You got to define <mode>" unless ($ARGV[1]);
-	@mode_tmp = split('', $ARGV[1]);
+	die "You got to define <mode>" unless ($ARGV[2]);
+	@mode_tmp = split('', $ARGV[2]);
 	foreach(@mode_tmp){
 		$mode{$_} = 1;
 	}
