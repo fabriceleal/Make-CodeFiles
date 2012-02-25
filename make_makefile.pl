@@ -19,11 +19,11 @@ clean :
 # If file exist, throw error ...
 (-e "$finalname") and die ("File $finalname already exists!");
 
-open (myfs, ">$finalname") or die ("Could not generate file $finalname, $!"));
+open (fs_m, ">$finalname") or die ("Could not generate file $finalname, $!");
 
 
-print myfs $text ;
+print fs_m $text ;
 
 # Close files 
-close myfs ;
+close fs_m ;
 
